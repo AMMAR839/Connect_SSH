@@ -1,10 +1,5 @@
-Langkah yang sangat tepat! Menggunakan SSH (Secure Shell) adalah cara standar dan paling efisien untuk mengontrol komputer *companion* (seperti Ubuntu di kapalmu) dari jarak jauh (misalnya dari laptop Windows GCS di darat).
 
-Dengan SSH, kamu tidak perlu lagi menyambungkan monitor atau keyboard ke laptop Ubuntu saat pengujian; cukup akses terminalnya lewat jaringan Wi-Fi/LAN.
-
-Berikut adalah langkah-langkah untuk membuat laptop Ubuntu kamu bisa diakses lewat SSH:
-
-### Tahap 1: Konfigurasi di Laptop Ubuntu (Hanya dilakukan sekali)
+### Tahap 1: Konfigurasi di Laptop Ubuntu 
 
 **1. Install OpenSSH Server**
 Secara default, Ubuntu memiliki SSH *client*, tetapi belum menginstal SSH *server* untuk menerima koneksi. Buka terminal di Ubuntu dan jalankan:
@@ -56,8 +51,4 @@ ssh ammar@192.168.1.15
 3. Saat pertama kali terkoneksi, akan muncul pesan peringatan *authenticity of host*. Ketik `yes` lalu tekan Enter.
 4. Masukkan **password laptop Ubuntu** kamu (saat mengetik password di terminal, karakternya memang tidak akan muncul di layar. Ketik saja lalu tekan Enter).
 
-Jika berhasil, tampilan Command Prompt Windows kamu akan berubah menjadi *command line* Ubuntu. Kamu sudah bisa menjalankan skrip `jalankan_rtk.sh`, menjalankan node ROS, atau mengecek koneksi MAVProxy langsung dari Windows!
 
-### Tips Tambahan untuk Proyek Kapal:
-
-Karena IP Address Wi-Fi bisa berubah-ubah setiap kali laptop direstart (DHCP), apakah kamu ingin saya pandu cara membuat koneksi **Static IP** antara Ubuntu dan Windows menggunakan kabel LAN agar koneksinya selalu tetap dan stabil saat dibawa ke lapangan?
