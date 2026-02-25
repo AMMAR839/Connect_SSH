@@ -51,4 +51,7 @@ ssh ammar@192.168.1.15
 3. Saat pertama kali terkoneksi, akan muncul pesan peringatan *authenticity of host*. Ketik `yes` lalu tekan Enter.
 4. Masukkan **password laptop Ubuntu** kamu (saat mengetik password di terminal, karakternya memang tidak akan muncul di layar. Ketik saja lalu tekan Enter).
 
+```cmd
+sudo systemctl start ssh
 
+```
